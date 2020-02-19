@@ -1,0 +1,13 @@
+version: '3.2'
+
+services:
+  app:
+    build: .
+    environment:
+      RACK_ENV: production
+    ports:
+        - "4567:4567"
+    volumes:
+      - type: bind
+        source: .
+        target: /app

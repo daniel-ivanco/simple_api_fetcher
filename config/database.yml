@@ -1,0 +1,24 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  username: root
+  password: root
+  host: 127.0.0.1
+  port: 3306
+  pool: 32
+
+production:
+  <<: *default
+  database: sinatra_boilerplate_prod
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port: <%= ENV['RDS_PORT'] %>
+
+development:
+  <<: *default
+  database: sinatra_boilerplate
+
+test:
+  <<: *default
+  database: sinatra_boilerplate_test
