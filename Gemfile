@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.5.0'
 
-gem 'puma', '~> 4.3.1'
+gem 'puma', '~> 4.3.5'
 gem 'rake', '~> 13.0.1'
 gem 'sinatra', '~> 2.0.0'
 gem 'sinatra-param', '~> 1.6.0', require: 'sinatra/param'
