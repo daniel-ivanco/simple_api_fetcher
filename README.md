@@ -16,4 +16,4 @@ This is a sample Sinatra application fetching and merging projects from multiple
 
 ### Testing the app
 - in the project root directory run command `docker-compose run --rm app bundle exec rspec spec`
-- to make tests more stable and performant, REST API and GraphQL requests are mocked and JSON files from `spec/fixtures` are served instead. These files are actual dumbs of Gitlab and Github API endpoints.
+- to make tests more stable and performant, REST API and GraphQL requests are mocked and JSON files from `spec/fixtures` are served instead. These files are actual dumps of Gitlab and Github API endpoints.
